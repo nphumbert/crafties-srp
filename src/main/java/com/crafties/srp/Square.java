@@ -1,7 +1,5 @@
 package com.crafties.srp;
 
-import com.crafties.srp.gui.Screen;
-
 public class Square {
 
     private final int edgeLength;
@@ -10,11 +8,11 @@ public class Square {
         this.edgeLength = edgeLength;
     }
 
-    public void drawOn(Screen screen) {
-        screen.print("I am a square of " + edgeLength + " cm edge.");
-    }
-
     public int area() {
         return edgeLength * edgeLength;
+    }
+
+    public int edgeLength() {
+        return edgeLength;
     }
 }
